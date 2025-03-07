@@ -253,6 +253,58 @@ En este laboratorio se obtuvo tres resultados de señales para cada persona y co
 Se observan las tres señales donde se mide la distribución de potencia de la señal en el dominio de la frecuencia. En el eje x podemos observar las frecuencias de la señal y los componentes dominantes de 100 a 1000 Hz y se evidencia la voz. Por otra parte, en el eje y se observa la cantidad de energía presente para cada frecuencia y los valores más altos se identifican como que la señal tiene más potencia en estas frecuencias. 
 
 
+## Requisitos:
+• Python 3.9
+
+
+•	Librosa
+
+
+
+• Numpy
+
+
+
+
+• Matplotlib
+
+
+
+• Soundfile
+
+• Os
+
+• Scipy.fftpack
+
+• fft, fftfreq
+
+• Sklearn.decomposition
+
+• Scipy.signal 
+
+## Contactanos:
+•est.mariajose.perez@unimilitar.edu.co
+
+
+
+
+•est.melany.gonzalez@unimilitar.edu.co
+
+
+
+
+
+•est.david.smoreno@unimilitar.edu.co
+## Bibliografia:
+• Beamforming. (s/f). Lowi.es. Recuperado el 7 de marzo de 2025, de https://www.lowi.es/glosario/beamforming/
+
+• FFT. (s/f). Nti-audio.com. Recuperado el 7 de marzo de 2025, de https://www.nti-audio.com/es/servicio/conocimientos/transformacion-rapida-de-fourier-fft
+
+• Luengas C., L. A., & Toloza, D. C. (2020). Análisis frecuencial y de la densidad espectral de potencia de la estabilidad de sujetos amputados. TecnoLógicas, 23(48), 1–16. https://doi.org/10.22430/22565337.1453
+
+• Separación de Fuenttes de audio. (s/f). Sciencedirect.com. Recuperado el 7 de marzo de 2025, de https://www.sciencedirect.com/topics/computer-science/audio-source-separation
+
+
 
 
 
