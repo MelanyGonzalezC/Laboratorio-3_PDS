@@ -223,6 +223,21 @@ Funciona como mezclas de señales de diferentes fuentes, separa señales superpu
 *Beamforming
 Se enfoca en una dirección específica mediante manipulación de micrófonos, funciona con señales espaciales y opera en el dominio espacial.
 
+## Transformada Rápida de Fourier (FFT)
+Es un método distinto de medición de audio, en donde se descompone una señal en sus componentes espectrales individuales y este proporciona información sobre su composición, este método es utilizado para análisis de errores, control de calidad y manejo de las condiciones del audio.  Este algoritmo calcula la Transformada Discreta de Fourier (DFT) la cual es una herramienta fundamental en el procesamiento de señales para convertir una señal en el dominio del tiempo al dominio de la frecuencia. 
+La transformada Discreta de Fourier analiza todas las frecuencias discretas y proporciona una representación espectral de la señal y está dada por la siguiente ecuación: 
+![image](https://github.com/user-attachments/assets/412520c5-31f9-454a-8a43-2c10184719e2)
+*Ecuación de Transformada Rápida de Fourier (FFT)*
+
+La FFT es una algoritmo que reduce la complejidad computacional para que el calculo de la DFT sea aún más rápido. 
+Para este laboratorio se tomaron las audio grabados y se hallo la Transformada Rapida de Fourier y se obtuvieron las siguientes graficas: 
+![image](https://github.com/user-attachments/assets/87deff14-2305-4a53-b9b5-0373baac657e)
+*FFT en las señales de audio obtenidas*
+
+En esta grafica se evidencia el análisis en frecuencia mediante la FFT, la cual convierte la señal en el dominio del tiempo al dominio de la frecuencia, de igual manera permite identificar que frecuencias están presentes en la señal y con qué intensidad.
+
+Analiza así la estructura espectral de la señal de audio, en el eje x representa las frecuencias en un rango de 0-8000 Hz (frecuencia de muestreo = 16KHz) y en el eje y se logra ver la intensidad, es decir la amplitud de cada componente de frecuencia, un valor más alto de frecuencia indica que la señal tiene mayor energía. En las tres graficas se observan picos en bajas frecuencias y la energía rápidamente disminuye en frecuencias más altas (sugiere que el ruido no es dominante en la región del espectro), esto indica que la mayor parte de la señal está en frecuencias bajas, esto corresponde a una característica de la voz humana. 
+
 
 
 
