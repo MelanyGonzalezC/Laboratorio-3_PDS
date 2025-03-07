@@ -55,14 +55,14 @@ for i, signal in enumerate(signals):
     axes[i, 1].plot(freqs, fft_vals)
     axes[i, 1].set_title(f"FFT de {files[i]}")
     axes[i, 1].set_xlabel("Frecuencia (Hz)")
-    axes[i, 1].set_ylabel("Magnitud FFT")
+    axes[i, 1].set_ylabel(" Voltaje (V) FFT")
     
     # PSD de la señal
     freqs, psd = welch(signal, fs=sr, nperseg=1024)
     axes[i, 2].semilogx(freqs, psd)
     axes[i, 2].set_title(f"Densidad espectral de {files[i]}")
     axes[i, 2].set_xlabel("Frecuencia (Hz)")
-    axes[i, 2].set_ylabel("Densidad de potencia")
+    axes[i, 2].set_ylabel("Densidad de potencia(V^2/Hz)")
     axes[i, 2].grid()
 
 plt.tight_layout()
