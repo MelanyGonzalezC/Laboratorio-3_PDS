@@ -233,6 +233,10 @@ La transformada Discreta de Fourier analiza todas las frecuencias discretas y pr
 La FFT es una algoritmo que reduce la complejidad computacional para que el calculo de la DFT sea aún más rápido. 
 Para este laboratorio se tomaron las audio grabados y se hallo la Transformada Rapida de Fourier y se obtuvieron las siguientes graficas: 
 ![image](https://github.com/user-attachments/assets/87deff14-2305-4a53-b9b5-0373baac657e)
+
+
+
+
 *FFT en las señales de audio obtenidas*
 
 En esta grafica se evidencia el análisis en frecuencia mediante la FFT, la cual convierte la señal en el dominio del tiempo al dominio de la frecuencia, de igual manera permite identificar que frecuencias están presentes en la señal y con qué intensidad.
@@ -251,6 +255,62 @@ En este laboratorio se obtuvo tres resultados de señales para cada persona y co
 
  
 Se observan las tres señales donde se mide la distribución de potencia de la señal en el dominio de la frecuencia. En el eje x podemos observar las frecuencias de la señal y los componentes dominantes de 100 a 1000 Hz y se evidencia la voz. Por otra parte, en el eje y se observa la cantidad de energía presente para cada frecuencia y los valores más altos se identifican como que la señal tiene más potencia en estas frecuencias. 
+
+
+Teniendo en cuenta los conceptos anterioreres se pueden ver los siguiente sresultados.
+![image](https://github.com/user-attachments/assets/52f9e8d8-85dc-4ead-bdc8-5b6ac8881407)
+
+
+
+
+*SNR de cada una de las fuentes.*
+
+
+
+Se realizó el cálculo de SNR (Signal to Noise Ratio) de cada una de las señales de audio en las cuales se obtuvieron los siguientes datos:
+SNR de audio-santi.wav: 16.55 dB
+SNR de audio-melany.wav: 16.13 dB
+SNR de audio-majo.wav: 18.70 dB
+Normalmente cuando el SNR de una señal es mayor a 10 dB se entiende que la señal es aceptable y cuando están por encima de 20 dB es una señal con muy buena calidad
+Por lo que podemos analizar de los resultados obtenidos que el audio de majo cuenta con SNR más alto, es decir, una mejor relación señal ruido con una mejor calidad de audio comparado a los otros dos audios y por otro lado los audios de Melany y Santi son bastante similares, pero con un valor menor a la anterior, lo cual indica que contiene un poco más de ruido. Gracias a lo anterior se puede deducir que los SNR depende de los micrófonos utilizados, el lugar de grabación y la alta presencia de ruido que había en el lugar.
+
+
+
+
+![image](https://github.com/user-attachments/assets/110282b8-bcd5-4998-bd9a-9a05732188c6)
+
+
+
+
+
+
+*SNR audio separado.*
+
+
+
+
+Un valor de 56,56 dB indica que la voz es significativamente más fuerte que el ruido del lugar ya que si se observa de forma general un SNR mayor a 40 dB se considera como una muy buena señal, pero en este caso también podemos observar que el audio no es del todo de la mejor calidad, pero el valor de la potencia del ruido indica que el método utilizado para la separación de la voz fue bastante bueno puesto que es bastante baja. 
+
+
+
+
+Se obtuvo la siguiente señal separada del audio de majo. 
+
+
+![image](https://github.com/user-attachments/assets/404de6fe-a6a6-433f-a789-9afa11f18602)
+
+
+
+
+
+*Voz separada.*
+
+
+
+De acuerdo a esta grafica se puede deducir que entre 0 y 5 segundos la amplitud es baja puesto que en ese momento fue el tiempo de silencio para tomarlo como ruido, pero existían ruidos muy suaves del ambiente como la música que se encontraba en un lugar cerca, luego de los 5 segundos la amplitud aumenta lo que indica que es cuando se vuelve fuerte el habla, asi como la señal también muestra picos bastante elevados lo que significa que hubo sonidos más fuertes por momentos.
+Por otro lado, se evidencia que la voz sufro distorsiones puesto que no se hizo un buen trabajo de almacenamiento de componentes espectrales que son fundamentales en el habla y es por esto que la voz suena como si hablara un robot. 
+
+
 
 
 ## Requisitos:
