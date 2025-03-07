@@ -197,6 +197,31 @@ Guardar un archivo con la voz aislada y lo reproduce en el sistema operativo des
 
 
 
+## Métodos de separación de fuentes
+La separación de fuentes de audio es una técnica de procesamiento de señales que se usa para separar y aislar diferentes sonidos, como puede ser la voz. En otras palabras, es el proceso de extracción de señales de sonido individuales de una mezcla de varias señales en una grabación de audio.
+Existen diferentes métodos de separación de fuentes, entre ellos:
+
+### Análisis de Componentes Independientes (ICA)
+Consiste en un método estadístico para separar una señal en varios subcomponentes, esto con el propósito de estimar componentes independientes. Es un modelo lineal que supone que las variables observadas son una mezcla lineal de variables desconocidas no gaussianas. 
+
+Para realizar este análisis se representan las señales como una combinación lineal, se aplica un modelo matemático para encontrar una transformación para la independencia de las señales y por ultimo se obtiene una señal aislada similar a la original.
+### Beamforming 
+Es una técnica de formación de haces (forma espacial de filtrado y usada para distinguir una señal objetivo y el ruido de fondo) encargada de dirigir una señal inalámbrica a una dirección concreta, evitando que se disperse en varias direcciones. Este método mejora el SNR de la señal deseada y atenúa el ruido de otras direcciones. 
+
+Para realizar este método, se utilizan varios micrófonos en una configuración especifica, se aplican pesos a las señales captadas para alinearla en la dirección deseada y por último, se suma la señal alineada para cancelar el ruido de otras direcciones.  
+Existen otros métodos para aislamiento de señales de interés como:
+
+*Filtrado Adaptativo: minimizar el error entre la señal deseada y la interferencia
+
+*Transformada de Fourier de Corto tiempo: analiza y filtra señales en el dominio de la frecuencia y espacio
+
+*Redes neuronales: aprender patrones de ruido y mejora la separación de voz
+### Diferencias entre ICA y Beamforming
+*ICA
+Funciona como mezclas de señales de diferentes fuentes, separa señales superpuestas independientes y opera en el dominio estadístico y matemático
+
+*Beamforming
+Se enfoca en una dirección específica mediante manipulación de micrófonos, funciona con señales espaciales y opera en el dominio espacial.
 
 
 
