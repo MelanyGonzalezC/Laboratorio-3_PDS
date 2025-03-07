@@ -308,7 +308,28 @@ Se obtuvo la siguiente señal separada del audio de majo.
 
 
 De acuerdo a esta grafica se puede deducir que entre 0 y 5 segundos la amplitud es baja puesto que en ese momento fue el tiempo de silencio para tomarlo como ruido, pero existían ruidos muy suaves del ambiente como la música que se encontraba en un lugar cerca, luego de los 5 segundos la amplitud aumenta lo que indica que es cuando se vuelve fuerte el habla, asi como la señal también muestra picos bastante elevados lo que significa que hubo sonidos más fuertes por momentos.
-Por otro lado, se evidencia que la voz sufro distorsiones puesto que no se hizo un buen trabajo de almacenamiento de componentes espectrales que son fundamentales en el habla y es por esto que la voz suena como si hablara un robot. 
+Por otro lado, se evidencia que la voz sufro distorsiones puesto que no se hizo un buen trabajo de almacenamiento de componentes espectrales que son fundamentales en el habla y es por esto que la voz suena como si hablara un robot.
+
+
+*Resultados.*
+
+
+La posición relativa de los micrófonos es fundamental, ya que cada uno capta una parte diferente de la voz, lo que provoca variaciones en la velocidad del sonido y en la intensidad de la señal. Esto se traduce en distintos valores de amplitud, aun cuando se grabe la misma fuente. Un micrófono situado cerca captará una señal más fuerte y clara, mientras que uno más alejado registrará un componente menos definido. Si los micrófonos están muy próximos entre sí, las voces se mezclarán en exceso, ya que el “punto de vista” será prácticamente el mismo, lo que dificulta su separación. En cambio, al ubicarlos en posiciones más separadas, se obtiene una mezcla menos homogénea, facilitando el aislamiento de la voz de interés.
+En cuanto a las fuentes sonoras y la separación de señales, los distintos métodos aprovechan variables específicas para lograr el aislamiento deseado. Por ejemplo, el análisis de componentes independientes (ICA) es indiferente al espacio, ya que trata cada fuente de forma independiente. Este método utiliza herramientas estadísticas basándose en la suma de variables independientes, lo que tiende a formar una distribución gaussiana (campana). Para separar las señales, el algoritmo busca componentes que maximicen la no-gaussianidad, empleando además combinaciones lineales para estimar una matriz de separación.
+Por otro lado, el beamforming aprovecha parámetros espaciales captados por los micrófonos, como las diferencias en el tiempo de llegada y en la amplitud de las señales. Con ello, se puede definir una dirección específica entre los micrófonos y las fuentes (la voz) y comparar su potencia, atenuando aquellas señales que no sean de interés.
+Al hablar de mejoras en la metodología, es importante considerar una distancia correcta y apropiada entre los distintos receptores de la señal, además de la calidad en la captura. Otro punto a tener en cuenta es la calibración de los dispositivos, ya que es necesario utilizar una frecuencia adecuada; en este laboratorio, por ejemplo, se emplearon grabadores de voz a una frecuencia de 44,1 kHz (frecuencia de la voz humana).
+Además, es fundamental controlar el ambiente, intentando evitar al máximo un nivel de ruido alto, ya que esto puede interferir, especialmente al calcular el SNR. Por último, se debe realizar la adquisición de muestras no una única vez, sino al menos dos o tres veces, considerando variaciones en el ruido ambiente, la calidad de los receptores y la intensidad de la señal (poder de la voz), con el fin de comparar y escoger la muestra con el mejor resultado.
+
+
+*conclusión.*
+
+
+Como conclusión, la señal resultante aislada mediante los métodos mencionados no fue tan efectiva y óptima como se esperaba, a pesar de haberse aplicado correctamente. Al investigar la causa, se encontró que el problema se origina en la parte práctica de la adquisición de las muestras de voz, ya que, en nuestro caso específico, al momento de grabar, los micrófonos y receptores estaban reunidos en un solo punto, demasiado próximos entre sí. Este error provocó que, al aplicar los distintos métodos, las variables y diferencias necesarias no fueran suficientes para obtener el resultado esperado.
+
+Por ejemplo, el beamforming depende de la posición, pues necesita captar direcciones basadas en las diferencias en el tiempo de llegada y la amplitud de las señales. Al estar los micrófonos en un mismo punto, estas diferencias eran demasiado pequeñas, complicando el aislamiento de la voz. En contraste, el ICA, que no depende del espacio, trata cada señal de manera independiente; sin embargo, al estar los micrófonos agrupados, las señales no eran lo suficientemente distintas como para que el algoritmo pudiera separar la voz de manera efectiva.
+
+Todo ello resalta la importancia de conocer los parámetros y las diferencias que emplean los distintos métodos, así como su naturaleza, para aplicarlos correctamente y obtener el resultado esperado.
+
 
 
 
