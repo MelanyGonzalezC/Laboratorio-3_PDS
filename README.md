@@ -311,7 +311,7 @@ De acuerdo a esta grafica se puede deducir que entre 0 y 5 segundos la amplitud 
 Por otro lado, se evidencia que la voz sufro distorsiones puesto que no se hizo un buen trabajo de almacenamiento de componentes espectrales que son fundamentales en el habla y es por esto que la voz suena como si hablara un robot.
 
 
-*Resultados.*
+## Resultados:
 
 
 La posición relativa de los micrófonos es fundamental, ya que cada uno capta una parte diferente de la voz, lo que provoca variaciones en la velocidad del sonido y en la intensidad de la señal. Esto se traduce en distintos valores de amplitud, aun cuando se grabe la misma fuente. Un micrófono situado cerca captará una señal más fuerte y clara, mientras que uno más alejado registrará un componente menos definido. Si los micrófonos están muy próximos entre sí, las voces se mezclarán en exceso, ya que el “punto de vista” será prácticamente el mismo, lo que dificulta su separación. En cambio, al ubicarlos en posiciones más separadas, se obtiene una mezcla menos homogénea, facilitando el aislamiento de la voz de interés.
@@ -321,7 +321,8 @@ Al hablar de mejoras en la metodología, es importante considerar una distancia 
 Además, es fundamental controlar el ambiente, intentando evitar al máximo un nivel de ruido alto, ya que esto puede interferir, especialmente al calcular el SNR. Por último, se debe realizar la adquisición de muestras no una única vez, sino al menos dos o tres veces, considerando variaciones en el ruido ambiente, la calidad de los receptores y la intensidad de la señal (poder de la voz), con el fin de comparar y escoger la muestra con el mejor resultado.
 
 
-*conclusión.*
+## Conclusión:
+
 
 
 Como conclusión, la señal resultante aislada mediante los métodos mencionados no fue tan efectiva y óptima como se esperaba, a pesar de haberse aplicado correctamente. Al investigar la causa, se encontró que el problema se origina en la parte práctica de la adquisición de las muestras de voz, ya que, en nuestro caso específico, al momento de grabar, los micrófonos y receptores estaban reunidos en un solo punto, demasiado próximos entre sí. Este error provocó que, al aplicar los distintos métodos, las variables y diferencias necesarias no fueran suficientes para obtener el resultado esperado.
